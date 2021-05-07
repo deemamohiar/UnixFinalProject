@@ -2,15 +2,12 @@
 layout: default
 ---
 
+<!DOCTYPE html>
 <html>
 	<head>
 		<title>Our Favourite Series</title>
 	</head>
 	<body>
-		<a href="booksPage.html">Click here to take a look at our favorite books!</a>
-		<br>
-		<a href="index.html">Click here to go back to the home page.</a>
-		<br>
 		<h1>In this page, you can take a look at some of our favourite series from different genres.</h1> 
 		<h2>Here are the genres we will be exploring:</h2>
 		<h3>

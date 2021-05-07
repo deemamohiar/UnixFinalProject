@@ -4,3 +4,7 @@
 
 layout: default
 ---
+
+[Click here to take a look at our favorite series!](series.html)
+<br>
+[Click here to take a look at our favorite books!](booksPage.html)
