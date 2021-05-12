@@ -43,7 +43,7 @@ layout: default
 			To the shattering of her perfect world by a murdered woman's secrets...<br>
 			To a place where every truth becomes a lie—and every loved one is a stranger...<br>
 			To a gathering darkness that threatens her innocent child—and herself...<br>
-			To a home where nothing is safe, and there's no one she can trust.<br>
+
 		</h5>
 		<img src="book2.jpg" width= "200" height="290">
 		<br><br>
