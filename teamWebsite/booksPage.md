@@ -64,7 +64,7 @@ layout: default
 		</h4>
 		<h5>
 			Summary:<br>Just after midnight, a snowdrift stops the Orient Express in its tracks.<br>The luxurious train is surprisingly full for the time of the year, but by the morning it is one passenger fewer.<br>An American tycoon lies dead in his compartment, stabbed a dozen times, his door locked from the inside.<br>
-			Isolated and with a killer in their midst, detective Hercule Poirot must identify the murderer—in case he or she<br>decides to strike again.
+			Isolated and with a killer in their midst, detective Hercule Poirot must identify the murderer—in case he or she<br>decides to strike agai   n.
 		</h5>
 		<img src="book3.jpg" width= "200" height="290">
 		<br><br>
