@@ -140,3 +140,64 @@
 	* sudo bundle exec jekyll build
 	* sudo cp -a _site/. /var/www/html
 
+			...Still inside VPS...
+
+- Create shell script inside /usr/bin directory
+	* cd /ur/bin
+	* sudo touch script.sh
+	Give script execution permission
+	sudo chmod +x script.sh
+
+- Make script check if websiteName folder is up to date (no pulls to be completed from repository):
+	Open script.sh
+	* vim script.sh
+	Add the following lines inside script.sh
+	#!/bin/bash
+	cd /home/websiteName/
+	if
+		sudo git pull --rebase | grep -q "Already up to date.";
+	then
+		:
+	else
+		sudo git pull --rebase
+		sudo bundle exec jekyll build
+		sudo cp -a _site/. /var/www/html;
+	fi
+
+- Create timer to automatically pull from git repository every 5 minutes:
+	Create timer
+	* vim script.timer
+	Add the following lines inside script.timer
+	[Unit]
+	Description = Timer for the script to build website if needed
+	[Timer]
+	OnUnitActiveSec = 300s
+	OnBootSec = 300s
+	[Install]
+	WantedBy = timers.target
+
+	Save changes
+	:wq
+
+- Create config file:
+	Create the script.service file
+	* vim script.service
+	Add the following lines inside the script.service file
+	[Unit]
+	Decription = Script to build website if needed
+	[Service]
+	ExecStart = /usr/bin/script.sh
+	[Install]
+	WantedBy = graphical.target
+
+	Save changes
+	:wq
+
+- Activate the timer and service:
+	* sudo systemctl enable script.service
+	* sudo systemctl start script.service
+	* sudo systemctl enable script.timer
+	* sudo systemctl start script.timer
+	
+	
+	
